@@ -201,7 +201,7 @@ main .slider{
 main .slider img{
 	width: 100%;
 	height: 450px;
-	object-fit: cover;
+	object-fit:contain
 }
 main .slider .slider-text{
 	position: absolute;
@@ -213,14 +213,14 @@ main .slider .slider-text{
 	padding: 20px;
 }
 main .slider .slider-text h3{
-	font-size: 20px;
+	font-size: 7px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-align: right;
 }
 main .slider .slider-text h2{
 	color: var(--khaki);
-	font-size: 42px;
+	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 20px;
