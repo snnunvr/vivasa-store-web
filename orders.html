@@ -12,6 +12,16 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<!-- Javascript -->	
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script>
+		    $(document).ready(function(){
+		      $('.slider').bxSlider({
+				  auto: true,
+				  autoControls: true,
+				  stopAutoOnClick: true,
+				  pager: true
+				});
+		    });
+		 </script>
  	</head>
 <body>
 
@@ -20,9 +30,9 @@
 			<div class="brand">
 				<div class="logo">
 					<a href="index.html">
-						<img src="img/icons/online_shopping.png">
+						<img src="img/icons/vivasa store.png">
 						<div class="logo-text">
-							<p class="big-logo">Ecommerce</p>
+							<p class="big-logo">Vivasa</p>
 							<p class="small-logo">online shop</p>
 						</div>
 					</a>
@@ -32,8 +42,8 @@
 						<img src="img/icons/account.png">
 						<div class="dropdown-menu">
 							<ul>
-								<li><a href="account.html">My Account</a></li>
-								<li><a href="orders.html">My Orders</a></li>
+								<li><a href="account.html">Hesabım</a></li>
+								<li><a href="orders.html">Sepetim</a></li>
 							</ul>
 						</div>
 					</div>
@@ -43,18 +53,18 @@
 							<table border="1">
 								<thead>
 									<tr>
-										<th>Image</th>
-										<th>Product Name</th>
+										<th>Ürün Bilgisi</th>
+										<th>Ürün İsmi</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td><img src="img/product/img1.jpg"></td>
-										<td>product name</td>
+										<td>Ürün Bilgisi</td>
 									</tr>
 									<tr>
 										<td><img src="img/product/img2.jpg"></td>
-										<td>product name</td>
+										<td>Ürün Bilgisi</td>
 									</tr>
 								</tbody>
 							</table>
@@ -66,24 +76,24 @@
 							<table border="1">
 								<thead>
 									<tr>
-										<th>Image</th>
-										<th>Product Name</th>
-										<th class="center">Price</th>
-										<th class="center">Qty.</th>
-										<th class="center">Amount</th>
+										<th>Ürün Resmi</th>
+										<th>Ürün Bilgisi</th>
+										<th class="center">Fiyat</th>
+										<th class="center">KDV%20.</th>
+										<th class="center">Ödenecek Tutar</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td><img src="img/product/img1.jpg"></td>
-										<td>product name</td>
+										<td>Ürün Bilgisi</td>
 										<td class="center">1200</td>
 										<td class="center">2</td>
 										<td class="center">2400</td>
 									</tr>
 									<tr>
 										<td><img src="img/product/img2.jpg"></td>
-										<td>product name</td>
+										<td>Ürün Bilgisi</td>
 										<td class="center">1500</td>
 										<td class="center">2</td>
 										<td class="center">3000</td>
@@ -98,16 +108,16 @@
 			<div class="menu-bar">
 				<div class="menu">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="shop.html">Shop</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="index.html">Anasayfa</a></li>
+						<li><a href="shop.html">Mağaza</a></li>
+						<li><a href="about.html">Hakkımızda</a></li>
+						<li><a href="contact.html">İletişim</a></li>
 					</ul>
 				</div>
 				<div class="search-bar">
 					<form>
 						<div class="form-group">
-							<input type="text" class="form-control" name="search" placeholder="Search">
+							<input type="text" class="form-control" name="search" placeholder="Ürün Ara">
 							<img src="img/icons/search.png">
 						</div>
 					</form>
@@ -118,75 +128,223 @@
 
 	<div class="container">
 		<main>
-			<div class="breadcrumb">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li> / </li>
-					<li><a href="account.html">Account</a></li>
-					<li> / </li>
-					<li>Orders</li>
-				</ul>
-			</div> <!-- End of Breadcrumb-->
-
-			
-			<div class="account-page">
-				<div class="profile">
-					<div class="profile-img">
-						<img src="img/product/img5.jpg">
-						<h2>John Doe</h2>
-						<p>user@mail.com</p>
-					</div>						
-					<ul>
-						<li><a href="account.html" class="active">Account <span>></span></a></li>
-						<li><a href="orders.html">My Orders <span>></span></a></li>
-						<li><a href="change-password.html">Change Password <span>></span></a></li>
-						<li><a href="">Logout <span>></span></a></li>
-					</ul>
-				</div>
-				<div class="account-detail">					
-					<h2>My Orders</h2>
-					<div class="order-detail">
-						<table>
-							<thead>
-								<tr>
-									<th>Date</th>
-									<th>Order Ref#</th>
-									<th>Amount</th>
-									<th>Payment Mode</th>
-									<th>Status</th>
-									<th>View</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>06-02-2020</td>
-									<td>61245231241</td>
-									<td>2,150</td>
-									<td>Cash</td>
-									<td>Pending</td>
-									<td><a href="#">View</a></td>
-								</tr>
-								<tr>
-									<td>08-02-2020</td>
-									<td>612467771245</td>
-									<td>5,000</td>
-									<td>Cash</td>
-									<td>Pending</td>
-									<td><a href="#">View</a></td>
-								</tr>
-								<tr>
-									<td>15-08-2020</td>
-									<td>612874511233</td>
-									<td>3000</td>
-									<td>Cash</td>
-									<td>Pending</td>
-									<td><a href="#">View</a></td>
-								</tr>	
-							</tbody>
-						</table>
+			<div class="slider">
+				<div class="slide-1">
+					<img src="img/slider/Slider-1.jpg">
+					<div class="slider-text">
+						<h1>%40 İndirim</h1>
+						<h2>MC POLO SPORTS</h2>
+						<a href="/orders.html">SATIN AL</a>
 					</div>
-				</div>				
-			</div>		
+				</div>
+				<div class="slide-2">
+					<img src="img/slider/Slider-2.jpg">
+					<div class="slider-text">
+						<h1>%40 İndirim</h1>
+						<h2>MC POLO FLOW </h2>
+						<a href="#">SATIN AL</a>
+					</div>
+				</div>
+				<div class="slide-3">
+					<img src="img/slider/Slider-3.jpg">
+					<div class="slider-text">
+						<h1>%40 İndirim</h1>
+						<h2>MC POLO AHENK</h2>
+						<a href="#">SATIN AL</a>
+					</div>
+				</div>
+				<div class="slide-3">
+					<img src="img/slider/Slider-4.jpg">
+					<div class="slider-text">
+						<h1>%40 İndirim</h1>
+						<h2>MC POLO KASPORT</h2>
+						<a href="#">SATIN AL</a>
+					</div>
+				</div>
+				<div class="slide-3">
+					<img src="img/slider/Slider-5.jpg">
+					<div class="slider-text">
+						<h1>%40 İndirim</h1>
+						<h2>MC POLO KAHVEM</h2>
+						<a href="#">SATIN AL</a>
+					</div>
+				</div>
+				<div class="slide-3">
+					<img src="img/slider/Slider-6.jpg">
+					<div class="slider-text">
+						<h1>%40 İndirim</h1>
+						<h2>MC POLO STAR</h2>
+						<a href="#">SATIN AL</a>
+					</div>
+				</div>
+				<div class="slide-3">
+					<img src="img/slider/Slider-7.jpg">
+					<div class="slider-text">
+						<h1>%40 İndirim</h1>
+						<h2>MC POLO TONE</h2>
+						<a href="/orders.html">SATIN AL</a>
+					</div>
+				</div>		
+			</div> <!-- slider -->
+
+			<div class="new-product-section">
+				<div class="product-section-heading">
+					<h2>Tranding Products <img src="img/icons/increase.png"></h2>
+					<h3>Most selling product for the month</h3>
+				</div>
+				<div class="product-content">
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img1.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Men's / Watches</h3>
+							<h2>Gray Color Men's Watch</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.4500/-</p>
+						</div>						
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img2.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Men's / Pants</h3>
+							<h2>Levi's Jeans Pant</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.2000/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img3.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Men's / Watches</h3>
+							<h2>Black Men's Watch</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.4000/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img4.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Men's / Shoes</h3>
+							<h2>Nick Black Sneakers</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.3200/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img5.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Glasses</h3>
+							<h2>Wood Frame Sun Glass</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.1200/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img6.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Women's / Hand Bags</h3>
+							<h2>Leather Hand Bag</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.3800/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img7.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Men's / Shoes</h3>
+							<h2>Men's Sneaker</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.3500/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img8.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Women's / Hand Bags</h3>
+							<h2>Brown Leather Hand Bag</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.5200/-</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- New Product Section -->
+
+			<div class="collection">
+				<div class="men-collection">
+					<h2>Men's Collection</h2>
+				</div>
+				<div class="women-collection">
+					<h2>Women's Collection</h2>
+				</div>
+			</div> <!-- Collection Section -->
+
+			<div class="new-product-section">
+				<div class="product-section-heading">
+					<h2>Recommend Products <img src="img/icons/good_quality.png"></h2>
+					<h3>OUR BEST PRODUCTS RECOMMENDED FOR YOU</h3>
+				</div>
+				<div class="product-content">
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img1.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Men's / Watches</h3>
+							<h2>Gray Color Men's Watch</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.4500/-</p>
+						</div>						
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img2.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Men's / Pants</h3>
+							<h2>Levi's Jeans Pant</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.2000/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img3.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Men's / Watches</h3>
+							<h2>Black Men's Watch</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.4000/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/img4.jpg">
+						</a>
+						<div class="product-detail">
+							<h3>Men's / Shoes</h3>
+							<h2>Nick Black Sneakers</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.3200/-</p>
+						</div>
+					</div>
+				</div>
+			</div> <!-- Recommend Product Section -->
 		</main> <!-- Main Area -->
 	</div>
 
