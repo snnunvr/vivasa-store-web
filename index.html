@@ -417,15 +417,8 @@
 			</div> <!-- Footer Bar -->
 		</div>
 	</footer> <!-- Footer Area -->
-	<script>
-		fetch('/api/products')
-		  .then(response => response.json())
-		  .then(data => {
-			// Verileri HTML sayfanızda kullanın
-			document.getElementById('veriGoster').innerHTML = JSON.stringify(data, null, 2);
-		  })
-		  .catch(error => console.error(error));
-	  </script>
+    <script src="js/db.js"></script>
+
 </body>
 
 </html>
